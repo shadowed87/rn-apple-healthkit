@@ -221,6 +221,11 @@ RCT_EXPORT_METHOD(deleteWorkout:(NSDictionary *)input callback:(RCTResponseSende
     [self workout_delete:input callback:callback];
 }
 
+RCT_EXPORT_METHOD(getWorkout:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+{
+    [self workout_get:input callback:callback];
+}
+
 RCT_EXPORT_METHOD(getHeartRateSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
 {
     [self vitals_getHeartRateSamples:input callback:callback];

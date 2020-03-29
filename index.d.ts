@@ -27,6 +27,15 @@ declare module "rn-apple-healthkit" {
         getMindfulSession(options: MindfulSessionData, callback: (err: string, results: HealthValue) => void): void;
 
         getStepCount(options: any, callback: (err: string, results: HealthValue) => void): void;
+
+        saveWater(options: Object, callback: (error: string, result: Object) => void): void;
+        getWater(options: Object, callback: (error: string, result: Object) => void): void;
+        getWaterSamples(options: Object, callback: (error: string, result: Object) => void): void;
+        deleteWater(options: Object, callback: (error: string, result: Object) => void): void;
+        saveWorkout(options: Object, callback: (error: string, result: Object) => void): void;
+        getWorkout(options: Object, callback: (error: string, result: Object) => void): void;
+        deleteWorkout(options: Object, callback: (error: string, result: Object) => void): void;
+
     }
 
     export interface HealthDateOfBirth {
