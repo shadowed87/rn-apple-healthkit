@@ -294,6 +294,17 @@
     return array;
 }
 
++ (HKWorkoutActivityType)hkWorkoutActivityTypeFromOptions: (NSDictionary *)options key: (NSString *)key withDefault: (HKWorkoutActivityType)defaultValue {
+    NSDictionary * stringToWorkoutActivityType = [RCTAppleHealthKit getStringToWorkoutActivityTypeDictionary];
+    HKWorkoutActivityType activityType = defaultValue;
+
+    if([options objectForKey:key] && [stringToWorkoutActivityType objectForKey:[options valueForKey:key]]) {
+        NSString * activityString = [options valueForKey:key];
+        activityType = [(NSNumber *)[stringToWorkoutActivityType objectForKey:activityString] integerValue];
+    }
+    return activityType;
+}
+
 + (NSString*)stringForHKWorkoutActivityType:(int) enumValue{
     switch( enumValue ){
         case HKWorkoutActivityTypeAmericanFootball:

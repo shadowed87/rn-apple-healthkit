@@ -210,6 +210,16 @@ RCT_EXPORT_METHOD(deleteWater:(NSDictionary *)input callback:(RCTResponseSenderB
     [self water_delete:input callback:callback];
 }
 
+RCT_EXPORT_METHOD(saveWorkout:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+{
+    [self workout_save:input callback:callback];
+}
+
+RCT_EXPORT_METHOD(deleteWorkout:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+{
+    [self workout_delete:input callback:callback];
+}
+
 RCT_EXPORT_METHOD(getHeartRateSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
 {
     [self vitals_getHeartRateSamples:input callback:callback];
