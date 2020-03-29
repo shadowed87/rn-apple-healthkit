@@ -8,6 +8,7 @@
 //
 
 #import "RCTAppleHealthKit+Utils.h"
+#import "RCTAppleHealthKit+TypesAndPermissions.h"
 
 @implementation RCTAppleHealthKit (Utils)
 
