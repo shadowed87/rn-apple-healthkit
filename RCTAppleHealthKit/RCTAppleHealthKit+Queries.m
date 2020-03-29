@@ -9,6 +9,7 @@
 
 #import "RCTAppleHealthKit+Queries.h"
 #import "RCTAppleHealthKit+Utils.h"
+#import "RCTAppleHealthKit+TypesAndPermissions.h"
 
 #import <React/RCTBridgeModule.h>
 #import <React/RCTEventDispatcher.h>
