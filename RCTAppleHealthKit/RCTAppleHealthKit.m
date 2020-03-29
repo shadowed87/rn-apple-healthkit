@@ -19,6 +19,7 @@
 #import "RCTAppleHealthKit+Methods_Results.h"
 #import "RCTAppleHealthKit+Methods_Sleep.h"
 #import "RCTAppleHealthKit+Methods_Mindfulness.h"
+#import "RCTAppleHealthKit+Methods_Workout.h"
 
 #import <React/RCTBridgeModule.h>
 #import <React/RCTEventDispatcher.h>
