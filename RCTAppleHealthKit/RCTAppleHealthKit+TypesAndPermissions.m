@@ -93,7 +93,7 @@
     // workouts
     if ([@"MindfulSession" isEqualToString: key] && systemVersion >= 10.0) {
         return [HKObjectType categoryTypeForIdentifier:HKCategoryTypeIdentifierMindfulSession];
-    } else if ([@"MindfulSession" isEqualToString: key]){
+    } else if ([@"Workout" isEqualToString: key]){
         return [HKObjectType workoutType];
     }
 
